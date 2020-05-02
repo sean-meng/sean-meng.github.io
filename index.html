@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Sean</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+
+  <head>
+
+  <body>
+     <button id="myBtn" onclick="totop()">Return to Top</button>
+    <div class = "firstSection blackSection">
+        <div class = " textBody textfirst">
+
+        <div class = "titleWhiteSection"> Hi, I'm Sean</div>
+        <div class = "titleWhiteSection"> I'm a...</div>
+
+        </div>
+
+        <div class = "ani-all ani-one">student</div>
+        <div class = "ani-all ani-two">developer</div>
+        <div class = "ani-all ani-three">friend</div>
+
+    </div>
+    <div class = "whiteSection">
+        <div class = "textBody">
+
+        <h1 class = "blackText"> My story</h1>
+        <h4 class = "blackText"> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+          corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+          officia deserunt mollitia animi, id est laborum et dolorum fuga. </h4>
+
+        </div>
+
+        <div class = "pictureGallery">
+          <img class="photo firstphoto" src="assets/img/phatsean.jpg">
+        </div>
+
+
+
+    </div>
+
+    <div class = "blackSection">
+        <div class = "textBody">
+
+        <h1 class = "whiteText"> What I'm up to now</h1>
+        <h4 class = "whiteText"> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+          corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+          officia deserunt mollitia animi, id est laborum et dolorum fuga. </h4>
+
+        </div>
+
+        <div class = "pictureGallery">
+          <img class="photo secondphoto" src="assets/img/websitepicture.jpg">
+        </div>
+    </div>
+
+    <div class = "whiteSection">
+        <div class = "textBody">
+
+        <h1 class = "blackText"> The path ahead</h1>
+        <h4 class = "blackText"> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+          corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+          officia deserunt mollitia animi, id est laborum et dolorum fuga. </h4>
+
+        </div>
+
+        <div class = "pictureGallery">
+          <img class="photo firstphoto" src="assets/img/path.jpg">
+        </div>
+    </div>
+
+
+    <script>
+    // Credit: w3schools button tutorial
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+
+      if (Math.floor((document.documentElement.scrollTop+100)/600) % 2 == 1) {
+        mybutton.style.color = "white";
+      } else {
+        mybutton.style.color = "black";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function totop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+  </body>
+</html>
